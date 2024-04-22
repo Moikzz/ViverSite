@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ConjuntoLink": {
+      "displayName": "Seção de Link",
+      "type": "component",
+      "repeatable": true,
+      "component": "pack.secao-de-link"
+    }
+  }
+}

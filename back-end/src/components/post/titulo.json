@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_post_titulos",
+  "info": {
+    "displayName": "Titulo",
+    "icon": "italic",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "texto": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "default": "Escreva aqui o Título da Postagem"
+    }
+  }
+}

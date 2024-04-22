@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_documento_tipos",
+  "info": {
+    "displayName": "tipo"
+  },
+  "options": {},
+  "attributes": {
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "InformacaoFinanceira",
+        "EstatutoSocial",
+        "Outro"
+      ],
+      "required": true
+    }
+  }
+}

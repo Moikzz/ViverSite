@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_documentos",
+  "info": {
+    "displayName": "Documento",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Arquivo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "Nome": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Data": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    }
+  }
+}

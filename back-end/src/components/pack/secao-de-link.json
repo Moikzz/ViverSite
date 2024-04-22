@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_block_secao_de_links",
+  "info": {
+    "displayName": "ConjuntoLink",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.bloco-link"
+    },
+    "NomeDoConjunto": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentos",
+  "info": {
+    "singularName": "documento",
+    "pluralName": "documentos",
+    "displayName": "Documento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "data": {
+      "type": "date",
+      "required": true
+    },
+    "UIDDocumento": {
+      "type": "uid",
+      "targetField": "nome",
+      "required": true
+    },
+    "Arquivo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "tipo": {
+      "displayName": "tipo",
+      "type": "component",
+      "repeatable": false,
+      "component": "documento.tipo",
+      "required": true
+    }
+  }
+}

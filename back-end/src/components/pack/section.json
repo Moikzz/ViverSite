@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_pack_sections",
+  "info": {
+    "displayName": "Section"
+  },
+  "options": {},
+  "attributes": {
+    "Institucional": {
+      "type": "enumeration",
+      "enum": [
+        "NossaHistoria",
+        "Apresentacao",
+        "Missao",
+        "Valores"
+      ]
+    },
+    "Transparencia": {
+      "type": "enumeration",
+      "enum": [
+        "PainelDeTransparencia",
+        "PlanoDeTrabalho",
+        "EstatutoSocial",
+        "Parcerias"
+      ]
+    },
+    "Publicacoes": {
+      "type": "enumeration",
+      "enum": [
+        "RelatorioDeAtividadeAnual",
+        "Campanhas",
+        "Projetos",
+        "Noticias"
+      ]
+    },
+    "Integridade": {
+      "type": "enumeration",
+      "enum": [
+        "InformacoesFinanceiras",
+        "CriticaSugestao",
+        "Certificados",
+        "Denuncia"
+      ]
+    }
+  }
+}

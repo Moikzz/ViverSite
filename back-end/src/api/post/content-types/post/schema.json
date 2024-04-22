@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Postagem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UID": {
+      "type": "uid",
+      "required": true,
+      "targetField": "Titulo"
+    },
+    "Titulo": {
+      "type": "string",
+      "default": "Escreva aqui o Título da Postagem",
+      "required": true,
+      "unique": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "posts"
+    },
+    "BlocodeTexto": {
+      "type": "component",
+      "repeatable": true,
+      "component": "post.texto",
+      "required": true
+    },
+    "categoria": {
+      "type": "component",
+      "repeatable": false,
+      "component": "post.categoria",
+      "required": true
+    },
+    "Data": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_post_textos",
+  "info": {
+    "displayName": "Parágrafo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Texto": {
+      "type": "text",
+      "required": false,
+      "default": "..."
+    },
+    "TituloTexto": {
+      "type": "string",
+      "required": true
+    },
+    "DocumentodaPostagem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.documento"
+    },
+    "ImagemDaPostagem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.imagem"
+    }
+  }
+}

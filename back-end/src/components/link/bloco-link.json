@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_link_bloco_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "NomeLink": {
+      "type": "string",
+      "required": true
+    },
+    "EnderecoLink": {
+      "type": "richtext",
+      "required": true,
+      "default": "Link Aqui"
+    },
+    "IconeLink": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

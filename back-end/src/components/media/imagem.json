@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_common_imagems",
+  "info": {
+    "displayName": "Imagem",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "descricao": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "data": {
+      "type": "date",
+      "required": false
+    },
+    "arquivo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios"
+      ]
+    },
+    "nome": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
