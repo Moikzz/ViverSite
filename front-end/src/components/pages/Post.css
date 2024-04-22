@@ -15,6 +15,20 @@
     margin-bottom: 1em;
 }
 
+.post-title-home {
+    color: #4f4c6b;
+    font-weight: 800;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.post-text-home {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
 .post-image {
     margin: 2em auto;
     width: 80%;

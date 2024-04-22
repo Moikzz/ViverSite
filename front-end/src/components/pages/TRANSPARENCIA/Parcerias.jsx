@@ -1,16 +1,15 @@
 import "../Post.css";
 
 import { useState } from "react";
-
-import { GetDocumentDataSmall } from "../../../data/DocumentDataSmall";
-import { GetPDF } from "../../../utils/Doc-Util";
+import { ParceriasData } from "../../../data/Documents/Parcerias";
+import { getParceria } from "../../../utils/Doc-Util";
 import { Link } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const Parcerias = () => {
-  const Doc = GetDocumentDataSmall().sort((a, b) => b.year - a.year);
+  const Doc = ParceriasData().sort((a, b) => b.year - a.year);
 
   const [show, setShow] = useState(undefined);
   const handleClose = () => setShow(undefined);
@@ -35,7 +34,7 @@ const Parcerias = () => {
                   <Modal.Title> {item.name} </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                  <iframe className="modal-pdf" src={GetPDF(item.pdf)} title={item.name}/>
+                  <iframe className="modal-pdf" src={getParceria(item.pdf)} title={item.name}/>
                 </Modal.Body>
                 <Modal.Footer>
                   <Link to={`/pdf/${item.id}`}>

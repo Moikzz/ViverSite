@@ -44,17 +44,11 @@ function Footer() {
           </div>
           <div className="sb__footer-links_div">
             <h4>Nossas parcerias</h4>
-            <NavLink className="footer-nav-link-text" to="/">
+            <NavLink className="footer-nav-link-text" to="/partners">
               Instituto Abraçaí
             </NavLink>
-            <NavLink className="footer-nav-link-text" to="/">
-              Instituto Fulano
-            </NavLink>
-            <NavLink className="footer-nav-link-text" to="/">
-              Instituto Ciclano
-            </NavLink>
-            <NavLink className="footer-nav-link-text" to="/">
-              Instituto Beltrano
+            <NavLink className="footer-nav-link-text" to="/partners">
+              CEASA
             </NavLink>
           </div>
           <div className="sb__footer-links_div">

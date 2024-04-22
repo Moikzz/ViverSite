@@ -3,6 +3,7 @@ import BsCarousel from "../../layout/Carousel/BsCarousel.jsx";
 import Banner from "../../layout/Banner/Banner.jsx";
 import Col from "react-bootstrap/Col";
 import BsCard from "../../layout/Card/BsCard.jsx";
+import Donate from "./Donate.jsx";
 
 import { GetCardsData } from "../../../data/CardsData.js";
 import { cardImageURL } from "../../../utils/Image-Util.js";
@@ -13,6 +14,11 @@ function Home() {
   return (
     <>
       <BsCarousel />
+      <h1 className="post-title-home">Bem vindo ao site da VIVER!</h1>
+      <div className="post-text-home">
+        <p>O nosso site ainda está em desenvolvimento, então caso você encontre algum erro, entre em contato com o nosso suporte técnico!</p>
+      </div>
+      <Donate/>
       <h2 className="home-title">Notícias</h2>
       <div className="home-news-cards">
         {Cards.map((card) => {

@@ -17,3 +17,7 @@ export function GetPDF(pdf) {
   export function getInfoFinanceira(pdf) {
     return new URL(`../assets/documents/Certificados/${pdf}`, import.meta.url).href;
   }
+
+  export function getParceria(pdf) {
+    return new URL(`../assets/documents/Transparencia/Parcerias/${pdf}`, import.meta.url).href;
+  }
